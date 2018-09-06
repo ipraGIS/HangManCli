@@ -5,9 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+
+import { TableroHangmanComponent } from './components/tablero-hangman';
+import { TecladoHangmanComponent } from './components/teclado-hangman';
+import { ImagenHangmanComponent } from './components/imagen-hangman';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TableroHangmanComponent, TecladoHangmanComponent, ImagenHangmanComponent
   ],
   imports: [
     BrowserModule,

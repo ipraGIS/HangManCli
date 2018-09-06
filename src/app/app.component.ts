@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  public mostrar: number;
+
+  set _mostrar(m: number) {
+    this.mostrar = m;
+  }
+  constructor() {
+    this.mostrar = 0;
+  }
+
+  onTab(tab) {
+    this.mostrar = tab;
+    console.log('muestra tab ' + tab);
+  }
 }

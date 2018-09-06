@@ -1,0 +1,12 @@
+<div id="tablero">
+    <span id=adivina><strong>{{adivina}}</strong></span>
+    <div class="marginText"><p>¿Crees que lo sabes?: </p><button class="button" (click)="resolver()">Resolver</button></div>
+</div>
+<!--Ventana Modal de Resolucion-->
+<div id="modal"  [class]="classModalResolver">
+    <div class="contentModal">
+        <p><button (click)="cerrar()" class="close">X</button></p>
+        <input id="inputResolver"  type=text maxlength="40" [(ngModel)]="solucion">
+        <p><button class="button" (click)="checkSolucion()">Resolver</button></p>
+    </div>
+</div> 

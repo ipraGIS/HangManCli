@@ -1,0 +1,12 @@
+<div class="letras">
+    <div class="input-w">
+        <label id="labelLetra">Introduce una letra</label>
+        <input class="inputLetra" autofocus id="inputLetra" type=text maxlength="1" [(ngModel)]="letra">
+    </div>
+    <div id="Errores">
+        <ul id="listErronea">
+            <span *ngIf="isTrue()"><label>Letras Erróneas</label></span>
+            <span *ngFor="let letra of letras">{{letra}} </span>
+        </ul>
+    </div>
+</div>
