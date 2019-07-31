@@ -6,4 +6,5 @@ turbo,
 toy story,
 peter pan,
 rey león,
-buscando a dory
+buscando a dory,
+aladín
